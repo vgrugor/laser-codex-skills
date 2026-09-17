@@ -11,7 +11,7 @@ Personal Codex skills for premium laser-cut plywood product workflows.
 - `/tiktok` -> `.codex/skills/laser-tiktok-sales-flow/SKILL.md`
 - `/imagecut` -> `.codex/skills/laser-image-cut-adaptation/SKILL.md`
 
-## Install On Another Computer
+## Install On Windows
 
 Clone this repository, then run:
 
@@ -31,6 +31,27 @@ To install into a specific project instead:
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -Target "D:\Laser\Designs_AI\.codex\skills"
 ```
 
+## Install On Mac Or Linux
+
+Clone this repository, then run:
+
+```bash
+chmod +x ./install.sh
+./install.sh
+```
+
+By default, the installer copies skills into:
+
+```text
+~/.codex/skills
+```
+
+To install into a specific project instead:
+
+```bash
+./install.sh "/Users/vlad/path/to/project/.codex/skills"
+```
+
 After installation, copy or adapt `AGENTS.md` into the project root if you want the slash shortcuts to be available in that project.
 
 ## Update
@@ -42,3 +63,9 @@ git pull
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
+On Mac or Linux:
+
+```bash
+git pull
+./install.sh
+```
