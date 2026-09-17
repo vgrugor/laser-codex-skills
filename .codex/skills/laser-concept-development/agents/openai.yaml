@@ -1,0 +1,3 @@
+﻿display_name: Laser Concept Development
+short_description: Develops a selected concept into production notes, final description, and raster preview.
+default_prompt: Use this skill after selecting a concept to create its subfolder and fill all development artifacts.

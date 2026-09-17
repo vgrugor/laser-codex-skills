@@ -1,0 +1,4 @@
+interface:
+  display_name: "Laser TikTok Sales Flow"
+  short_description: "Plan TikTok launches for laser plywood products."
+  default_prompt: "Use $laser-tiktok-sales-flow with this generated product preview to plan TikTok content before, during, and after fabrication."

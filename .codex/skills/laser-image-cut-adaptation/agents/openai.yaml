@@ -1,0 +1,4 @@
+interface:
+  display_name: "Laser Image Cut Adaptation"
+  short_description: "Adapt input images for laser-cut plywood designs."
+  default_prompt: "Use $laser-image-cut-adaptation with this image to simplify it for premium laser-cut plywood production, map colors to the project stain palette, and run the three-step preview loop."
