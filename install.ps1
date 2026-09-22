@@ -1,10 +1,10 @@
 param(
-    [string]$Target = "$HOME\.codex\skills"
+    [string]$Target = "$HOME\.agents\skills"
 )
 
 $ErrorActionPreference = "Stop"
 
-$source = Join-Path $PSScriptRoot ".codex\skills"
+$source = Join-Path $PSScriptRoot ".agents\skills"
 
 if (-not (Test-Path -LiteralPath $source)) {
     throw "Skills source folder not found: $source"
@@ -22,4 +22,3 @@ Get-ChildItem -LiteralPath $source -Directory | ForEach-Object {
 }
 
 Write-Host "Done. Skills installed to: $Target"
-

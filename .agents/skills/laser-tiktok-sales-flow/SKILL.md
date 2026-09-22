@@ -30,7 +30,7 @@ Use the richest available context:
 When a selected concept folder is known, create or update:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\<слаг_дизайн_концепта>\marketing\tiktok\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/<design-concept-slug>/marketing/tiktok/
 ```
 
 Recommended files:

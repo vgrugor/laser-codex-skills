@@ -40,7 +40,7 @@ Remove or flag:
 Always read:
 
 ```text
-D:\Laser\Designs_AI\laser-product-flow\color-system\stain-palette.json
+/Users/vlad/Laser/Designs_AI/laser-product-flow/color-system/stain-palette.json
 ```
 
 Use compatibility entries to select strong pairings. Prefer:

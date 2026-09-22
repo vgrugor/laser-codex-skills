@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-target="${1:-$HOME/.codex/skills}"
+target="${1:-$HOME/.agents/skills}"
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-source_dir="$script_dir/.codex/skills"
+source_dir="$script_dir/.agents/skills"
 
 if [[ ! -d "$source_dir" ]]; then
   echo "Skills source folder not found: $source_dir" >&2
@@ -22,4 +22,3 @@ for skill_dir in "$source_dir"/*; do
 done
 
 echo "Done. Skills installed to: $target"
-

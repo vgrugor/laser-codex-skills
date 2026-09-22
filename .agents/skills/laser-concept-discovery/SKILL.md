@@ -1,6 +1,6 @@
-﻿---
+---
 name: laser-concept-discovery
-description: Generate and preserve multiple premium laser-cut plywood design concepts before the user selects one. Use for product brief, general idea slug creation, stain palette-informed concept exploration, concept comparison, and saving all ideas under D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\.
+description: Generate and preserve multiple premium laser-cut plywood design concepts before the user selects one. Use for product brief, general idea slug creation, stain palette-informed concept exploration, concept comparison, and saving all ideas under /Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/.
 ---
 
 # Laser Concept Discovery
@@ -12,10 +12,14 @@ Use this before a concrete design concept is selected.
 Create or update:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/
 ```
 
-Use `D:\Laser\Designs_AI\laser-product-flow\scripts\new-discovery.ps1` when creating the folder.
+Create the folder tree directly on macOS if it does not exist. If helper scripts are available, prefer a macOS-compatible script from:
+
+```text
+/Users/vlad/Laser/Designs_AI/laser-product-flow/scripts/
+```
 
 ## Required Files
 
@@ -26,9 +30,9 @@ Use `D:\Laser\Designs_AI\laser-product-flow\scripts\new-discovery.ps1` when crea
 
 ## Workflow
 
-1. Determine concrete product type, for example `ключница`, `шкатулка`, `часы`, `панно`.
-2. Create a slug for the general idea, for example `key-holder-v2-premium`.
-3. Read measured stain data from `D:\Laser\Designs_AI\laser-product-flow\color-system\stain-palette.json` when choosing palettes.
+1. Determine concrete product type and create a lowercase English ASCII folder slug for it, for example `key-holder`, `keepsake-box`, `clock`, `wall-panel`.
+2. Create a lowercase English ASCII slug for the general idea, for example `key-holder-v2-premium`.
+3. Read measured stain data from `/Users/vlad/Laser/Designs_AI/laser-product-flow/color-system/stain-palette.json` when choosing palettes.
 4. Generate 3-7 distinct concept directions.
 5. Give each concept its own design-concept slug.
 6. Save all concept directions in `concept-directions.md`; never discard unchosen ideas.

@@ -1,6 +1,6 @@
 ---
 name: laser-image-cut-adaptation
-description: Adapt user-provided images, sketches, photos, ornaments, logos, or generated raster previews into simplified premium laser-cut plywood design guidance. Use when Codex needs to analyze an input image for CNC/diode laser production, reduce visual complexity, separate cut/engrave/layer zones, map colors to the measured project stain palette from D:\Laser\Designs_AI\laser-product-flow\color-system\stain-palette.json, run a three-step raster preview iteration loop, and produce Russian adaptation notes, prompts, or production-ready planning documents without treating raster mockups as CAD/DXF geometry.
+description: Adapt user-provided images, sketches, photos, ornaments, logos, or generated raster previews into simplified premium laser-cut plywood design guidance. Use when Codex needs to analyze an input image for CNC/diode laser production, reduce visual complexity, separate cut/engrave/layer zones, map colors to the measured project stain palette from /Users/vlad/Laser/Designs_AI/laser-product-flow/color-system/stain-palette.json, run a three-step raster preview iteration loop, and produce Russian adaptation notes, prompts, or production-ready planning documents without treating raster mockups as CAD/DXF geometry.
 ---
 
 # Laser Image Cut Adaptation
@@ -14,19 +14,21 @@ This is not a concept-discovery workflow. Start from the supplied image and pres
 Measured stain palette:
 
 ```text
-D:\Laser\Designs_AI\laser-product-flow\color-system\stain-palette.json
+/Users/vlad/Laser/Designs_AI/laser-product-flow/color-system/stain-palette.json
 ```
 
 Adaptation folders:
 
 ```text
-D:\Laser\Designs_AI\_image-adaptation\<product-type>\<image-slug>\
+/Users/vlad/Laser/Designs_AI/_image-adaptation/<product-type>/<image-slug>/
 ```
+
+Use lowercase English ASCII folder slugs with hyphens only, for example `wall-panel`, `logo-plaque`, or `floral-ornament`.
 
 Reference criteria:
 
 ```text
-D:\Laser\Designs_AI\.codex\skills\laser-image-cut-adaptation\references\adaptation-criteria.md
+/Users/vlad/Laser/Designs_AI/.agents/skills/laser-image-cut-adaptation/references/adaptation-criteria.md
 ```
 
 ## Required Files
@@ -57,7 +59,7 @@ Preview files:
 
 ## Workflow
 
-1. Identify the product type or intended object: panel, clock, key holder, box lid, sign, ornament, wall decor, logo plaque, etc.
+1. Identify the product type or intended object and create an English ASCII folder slug for it: panel, clock, key holder, box lid, sign, ornament, wall decor, logo plaque, etc.
 2. Inspect the source image visually. If image files are present on disk, use visual inspection tools before making adaptation claims.
 3. Create a concise Russian description of the source image in `source-notes.md`.
 4. Separate the image into essential identity, supporting details, and removable noise.
@@ -145,4 +147,4 @@ Before finishing, check:
 
 ## Reference Use
 
-Read `references\adaptation-criteria.md` when the request involves complex photos, portraits, multi-color artwork, logos, ornaments, or when deciding what to simplify versus preserve.
+Read `references/adaptation-criteria.md` when the request involves complex photos, portraits, multi-color artwork, logos, ornaments, or when deciding what to simplify versus preserve.

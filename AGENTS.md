@@ -6,12 +6,12 @@ When the user starts a request with one of these shortcuts, load the matching `S
 
 ## Shortcuts
 
-- `/premium` -> `.codex/skills/premium-laser-product-flow/SKILL.md`
-- `/discovery` -> `.codex/skills/laser-concept-discovery/SKILL.md`
-- `/develop` -> `.codex/skills/laser-concept-development/SKILL.md`
-- `/review` -> `.codex/skills/laser-prototype-review/SKILL.md`
-- `/tiktok` -> `.codex/skills/laser-tiktok-sales-flow/SKILL.md`
-- `/imagecut` -> `.codex/skills/laser-image-cut-adaptation/SKILL.md`
+- `/premium` -> `.agents/skills/premium-laser-product-flow/SKILL.md`
+- `/discovery` -> `.agents/skills/laser-concept-discovery/SKILL.md`
+- `/develop` -> `.agents/skills/laser-concept-development/SKILL.md`
+- `/review` -> `.agents/skills/laser-prototype-review/SKILL.md`
+- `/tiktok` -> `.agents/skills/laser-tiktok-sales-flow/SKILL.md`
+- `/imagecut` -> `.agents/skills/laser-image-cut-adaptation/SKILL.md`
 
 ## Routing Rules
 
@@ -23,4 +23,3 @@ When the user starts a request with one of these shortcuts, load the matching `S
 - `/imagecut` is for simplifying and adapting input images for laser cutting, engraving, layering, and stain-palette color mapping.
 
 Prefer Russian for durable project documents unless the user asks otherwise.
-

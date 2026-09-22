@@ -1,4 +1,4 @@
-﻿---
+---
 name: laser-prototype-review
 description: Review photos, measurements, or generated raster preview images for a premium laser-cut plywood product. Use after physical prototyping or during virtual preview iteration to critique composition, premium appearance, stain palette, hardware, manufacturability risks, and version improvements.
 ---
@@ -15,15 +15,15 @@ Use this for two review modes:
 Update the selected concept folder:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\<слаг_дизайн_концепта>\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/<design-concept-slug>/
 ```
 
 For virtual previews, write versioned review files in `preview/`:
 
 ```text
-preview\final-design-preview-v01-review.md
-preview\final-design-preview-v02-review.md
-preview\final-design-preview-v03-review.md
+preview/final-design-preview-v01-review.md
+preview/final-design-preview-v02-review.md
+preview/final-design-preview-v03-review.md
 ```
 
 For physical prototypes, save photos in `photos/` when files are available and update `prototype-review.md`.

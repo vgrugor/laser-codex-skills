@@ -1,4 +1,4 @@
-﻿---
+---
 name: premium-laser-product-flow
 description: Orchestrate the full premium laser-cut plywood product workflow. Use when the user wants to create, continue, or review premium CNC diode laser plywood products, including discovery before concept selection, selected concept development, prototype review, color palette use, final Russian descriptions, and raster preview images.
 ---
@@ -16,37 +16,37 @@ Use this as the entry-point skill. Decide which stage is active and route the wo
 Reusable flow files:
 
 ```text
-D:\Laser\Designs_AI\laser-product-flow\
+/Users/vlad/Laser/Designs_AI/laser-product-flow/
 ```
 
 Normalized stain samples:
 
 ```text
-D:\Laser\Designs_AI\laser-product-flow\stain-samples\
+/Users/vlad/Laser/Designs_AI/laser-product-flow/stain-samples/
 ```
 
 Measured palette:
 
 ```text
-D:\Laser\Designs_AI\laser-product-flow\color-system\stain-palette.json
+/Users/vlad/Laser/Designs_AI/laser-product-flow/color-system/stain-palette.json
 ```
 
 Discovery folders:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/
 ```
 
 Selected concept folders:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\<слаг_дизайн_концепта>\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/<design-concept-slug>/
 ```
 
 ## Operating Rules
 
 - Preserve all generated concept ideas in the parent discovery folder, even if the user does not select them.
-- Create a separate slug for the general idea and a separate slug for each selected design concept.
+- Create a separate lowercase English ASCII slug for the product type, the general idea, and each selected design concept; use hyphens instead of spaces.
 - Write durable working documents in Russian by default.
 - Use measured stain palette data over stain names when choosing colors.
 - Generate raster preview images only as visual mockups; never treat them as DXF/SVG/CAD/cutting files.
@@ -57,7 +57,7 @@ D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_ид
 If the user asks for several design concepts, generate or update discovery:
 
 ```text
-D:\Laser\Designs_AI\_discovery\<тип_изделия>\<слаг_общей_идеи>\
+/Users/vlad/Laser/Designs_AI/_discovery/<product-type>/<general-idea-slug>/
 ```
 
 If the user chooses one concept, create its subfolder inside the same discovery folder.
